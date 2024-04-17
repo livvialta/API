@@ -24,3 +24,4 @@ class CreateTodo(generics.CreateAPIView):
 class DeleteTodo(generics.DestroyAPIView): 
     queryset = ToDo.objects.all()
     serializer_class = TToDoSerializer
+    

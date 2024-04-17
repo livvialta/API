@@ -5,3 +5,5 @@ class TToDoSerializer(serializers.ModelSerializer):
     class Meta:
         model = ToDo
         fields = ('id', 'Title', 'Description', 'Price', 'Completed')
+
+        

@@ -8,3 +8,5 @@ urlpatterns = [
     path('delete/<int:pk>', DeleteTodo.as_view())
 
 ]
+
+
