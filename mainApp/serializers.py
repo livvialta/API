@@ -3,7 +3,8 @@ from .models import *
 
 class TToDoSerializer(serializers.ModelSerializer):
     class Meta:
+        # Define o modelo que será serializado
         model = ToDo
-        fields = ('id', 'Title', 'Description', 'Price', 'Completed')
-
         
+        # Define os campos do modelo que serão incluídos na serialização
+        fields = ('id', 'Title', 'Description', 'Price', 'Completed')
