@@ -8,7 +8,11 @@ activate
 
 
 
-pip install django djangorestframework mysqlserver
+pip install django djangorestframework 
+
+pip install mysqlclient
+
+pip install django-cors-headers
 
 
 cd TodoList

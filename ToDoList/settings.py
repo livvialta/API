@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     
     #third party apps:
     'rest_framework',
+
+    'corsheaders',
+    
 ]
 
 MIDDLEWARE = [
@@ -52,6 +55,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'ToDoList.urls'
@@ -131,3 +136,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8081",  # Adicione aqui a origem do seu aplicativo React Native
+]
